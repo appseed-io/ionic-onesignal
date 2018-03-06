@@ -12,6 +12,7 @@ import { HomeModule } from '../pages/home/home.module';
 import { SlideBoxModule } from '../pages/slide-box/slide-box.module';
 import { WordpressModule } from '../pages/wordpress/wordpress.module';
 import { MyApp } from './app.component';
+import { OneSignal } from '@ionic-native/onesignal';
 
 @NgModule({
 	declarations: [
@@ -35,7 +36,8 @@ import { MyApp } from './app.component';
 	],
 	providers: [
 		Config,
-		StatusBar
+		StatusBar,
+		OneSignal
 	]
 })
 export class AppModule {
